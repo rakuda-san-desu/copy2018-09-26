@@ -1,0 +1,64 @@
+@media(max-width: 750px){
+  /* この中にスマホ用のcssを記述 */
+
+  /* ヘッダー */
+  .headerNavBar {
+    margin-bottom: 2px;
+    height: 45px;
+    background-color: #fff;
+    display: block;
+  }
+
+  .headerBar {
+    margin-bottom: 3px;
+    padding: 0 5%;
+    height: 42px;
+    border-bottom: 2px solid #f6f6f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headerWrapper{
+    display: none;
+  }
+
+  .headerWrapper::after {
+    display: none;
+  }
+
+  .headerRogo {
+    margin:o auto;
+    padding-top: 270px;
+    color: #fff;
+    font-size: 10px;
+    display: block;
+  }
+
+  .headerRogo img {
+    text-align: center;
+  }
+
+
+  /* イントロダクション */
+  #introduction {
+    width: 90%;
+    margin-top: 125px;
+    padding-bottom: 60px;
+  }
+
+  #introduction h1 {
+    font-weight: normal;
+    font-size: 44px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 20px;
+  }
+
+  #introduction .introductionWrapper {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: left;
+    padding: 0;
+  }
+}

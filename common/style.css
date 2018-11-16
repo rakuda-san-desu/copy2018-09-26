@@ -1,0 +1,308 @@
+/* 全体に適用 */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f4;
+  font-family: "Helvetica Neue",Helvetica,Arial,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+ /* ナビゲーションリンク共通 */
+
+nav a{
+  font-family: "Gill Sans Std Book",sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ボタン共通 */
+.btn {
+  display: inline-block;
+  height: 48px;
+  width: 164px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 48px;
+  margin-top: 0;
+
+}
+
+/*   リストマーク */
+li {
+  list-style: none;
+}
+
+/* ヘッダー */
+header {
+  height: 900px;
+  background: url("../images/bg-img01.jpg");
+  background-size: cover;
+}
+.headerWrapper{
+  padding: 50px 80px;
+  height: 900px;
+  display: block;
+}
+
+.headerWrapper::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+.headerWrapper img {
+  float: left;
+}
+
+.headerNav {
+  width: 450px;
+  padding-top: 26px;
+  letter-spacing: 1px;
+  float: right;
+}
+
+
+
+.headernav ul li{
+  padding-bottom: 15px;
+  transition: 0.5s;
+}
+
+.headerNav ul li:hover {
+  padding-bottom: 15px;
+ border-bottom: 2px solid #fff;
+}
+
+/* ヘッダースマホ用none */
+.headerRog, .headerNavBar{
+  display: none;
+}
+
+/* コンテンツ幅 */
+.container {
+  width: 815px;
+  margin: 0 auto;
+}
+/* イントロダクション */
+#introduction {
+  margin-top: 125px;
+  padding-bottom: 60px;
+}
+
+#introduction h1 {
+  font-weight: normal;
+  font-size: 44px;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+#introduction .introductionWrapper {
+  width: 440px;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: left;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* コンテンツリスト ・ニュース共通*/
+.contentTitle {
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.contentTitle::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.contentTitle h2 {
+  font-size: 30px;
+font-weight: lighter;
+  letter-spacing: 2px;
+  line-height: 65px;
+  display: inline-block;
+  background: url("../images/border.png") no-repeat bottom left;
+  float: left;
+}
+
+.black{
+  border: 1px solid black;
+  color: black;
+  background: url("../images/sharp_arrow_forward_ios_black_18dp.png") 135px 15px no-repeat;
+  margin-top: 40px;
+  float: right;
+}
+
+.black:hover {
+ background: black  url("../images/sharp_arrow_forward_ios_white_18dp.png") right no-repeat;
+ color: #fff;
+}
+
+/* コンテンツリスト ・リンクボタン共通*/
+#contentsList {
+  background-color: #fffffd;
+}
+
+/* コンテンツリスト */
+
+.contentsList {
+  padding: 50px 0;
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contentBlock {
+  width: 220px;
+  text-align: left;
+}
+
+.contentBlock img {
+  width: 220px;
+}
+
+.contentBlock h2 {
+  font-size: 20px;
+  padding-left: 20px;
+  letter-spacing: 1px;
+}
+
+
+/* NEWS */
+#news {
+  padding-bottom: 60px;
+}
+.newsLink{
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.newsLink:hover{
+  opacity: 0.7;
+}
+
+.newsBlock img {
+  width: 320px;
+  height: 150px;
+}
+
+.newsBlockContent {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.newsBlockContent h2 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+
+
+.backToTop {
+  background-color: #fff;
+  height: 35px;
+  width: 60px;
+  border-radius: 25px 25px 0 0 ;
+  margin: 0 auto;
+  margin-bottom:  -5px;
+  padding-top: 5px;
+  transition: all 1s;
+}
+
+.backToTop:hover {
+  position: relative;
+  top: -5px;
+}
+/* SNSリンク */
+.sns {
+  background-color: #fffffd;
+  padding: 35px 0;
+}
+
+.snsBox {
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook{
+  border: 1px solid #4871a9;
+  color: #4871a9;
+}
+
+.facebook:hover {
+ background-color: #4871a9;
+ color: #fff;
+}
+
+.twitter{
+  border: 1px solid #70bdd3;
+  color: #70bdd3;
+}
+
+.twitter:hover {
+ background-color: #70bdd3;
+ color: #fff;
+}
+
+.hatena{
+  border: 1px solid #2f9bcd;
+  color: #2f9bcd;
+}
+
+.hatena:hover {
+ background-color: #2f9bcd;
+ color: #fff;
+}
+
+/* フッターナビゲーション */
+.footerNavWrapper {
+  background-color: #939797;
+height: 90px;
+}
+
+.footerNav {
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* コピーライト */
+
+.copyright{
+  background-color: #666c6d;
+  color: white;
+  font-size: 12px;
+}
+
+.Copyrightwrapper{
+  width: 815px;
+  height: 160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
